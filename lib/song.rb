@@ -5,6 +5,7 @@ class Song
   def initialize
     @name
     @artist_name
+    save
   end
   def self.all
     @@all
@@ -15,7 +16,6 @@ class Song
   end
 
   def self.create
-    save
     return self
   end
 end
