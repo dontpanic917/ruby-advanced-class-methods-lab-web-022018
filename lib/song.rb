@@ -54,7 +54,7 @@ class Song
     parse = filename.split(" - ")
     artist_name = parse[0]
     name = parse[1].gsub(".mp3", "")
-    song = self.new
+    song = self.create
     song.name = name
     song.artist_name = artist_name
     song
