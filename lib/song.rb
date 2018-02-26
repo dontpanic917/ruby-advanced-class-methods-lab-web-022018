@@ -42,8 +42,8 @@ class Song
 
   def self.new_from_filename(filename)
     parse = filename.split("-",".")
-    self.artist_name = parse[0].to_s
-    self.name = parse[1].to_s
+    @artist_name = parse[0].to_s
+    @name = parse[1].to_s
     song
   end
 
