@@ -17,5 +17,6 @@ class Song
   def self.create
     initialize
     save
+    return self
   end
 end
